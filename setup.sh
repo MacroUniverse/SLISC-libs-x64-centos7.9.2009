@@ -21,3 +21,5 @@ source ../SLISC0/make/lib_append.sh $PWD/lapack-static-*
 source ../SLISC0/make/lib_append.sh $PWD/mkl-*
 source ../SLISC0/make/lib_append.sh $PWD/mpfr-*
 source ../SLISC0/make/lib_append.sh $PWD/sqlite-*
+source ../SLISC0/make/lib_append.sh $PWD/boost-filesystem-*
+
