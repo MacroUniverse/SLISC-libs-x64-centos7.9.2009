@@ -1,4 +1,4 @@
-prefix=/home/docker/libs/mpfr
+prefix=/home/docker/libs/mpfr-4.1.0
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

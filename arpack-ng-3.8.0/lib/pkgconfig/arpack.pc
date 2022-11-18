@@ -1,4 +1,4 @@
-prefix=/home/docker/libs/arpack
+prefix=/home/docker/libs/arpack-ng-3.8.0
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

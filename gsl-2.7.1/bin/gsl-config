@@ -1,8 +1,8 @@
 #! /bin/sh
 
-prefix=/home/docker/libs/gsl
-exec_prefix=/home/docker/libs/gsl
-includedir=/home/docker/libs/gsl/include
+prefix=/home/docker/libs/gsl-2.7.1
+exec_prefix=/home/docker/libs/gsl-2.7.1
+includedir=/home/docker/libs/gsl-2.7.1/include
 
 usage()
 {
@@ -58,16 +58,16 @@ while test $# -gt 0; do
 	;;
 
     --cflags)
-       	echo -I/home/docker/libs/gsl/include 
+       	echo -I/home/docker/libs/gsl-2.7.1/include 
        	;;
 
     --libs)
         : ${GSL_CBLAS_LIB=-lgslcblas}
-	echo -L/home/docker/libs/gsl/lib -lgsl $GSL_CBLAS_LIB -lm
+	echo -L/home/docker/libs/gsl-2.7.1/lib -lgsl $GSL_CBLAS_LIB -lm
        	;;
 
     --libs-without-cblas)
-	echo -L/home/docker/libs/gsl/lib -lgsl -lm
+	echo -L/home/docker/libs/gsl-2.7.1/lib -lgsl -lm
        	;;
     *)
 	usage

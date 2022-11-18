@@ -1,5 +1,5 @@
-libdir=/home/docker/libs/lapack32-so/lib64
-includedir=/home/docker/libs/lapack32-so/include
+libdir=/home/docker/libs/lapack-shared-3.10.1/lib64
+includedir=/home/docker/libs/lapack-shared-3.10.1/include
 
 Name: LAPACKE
 Description: C Standard Interface to LAPACK Linear Algebra PACKage

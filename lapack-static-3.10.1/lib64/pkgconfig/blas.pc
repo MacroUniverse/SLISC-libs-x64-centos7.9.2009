@@ -1,5 +1,5 @@
-libdir=/home/docker/libs/lapack32-a/lib64
-includedir=/home/docker/libs/lapack32-a/include
+libdir=/home/docker/libs/lapack-static-3.10.1/lib64
+includedir=/home/docker/libs/lapack-static-3.10.1/include
 
 Name: BLAS
 Description: FORTRAN reference implementation of BLAS Basic Linear Algebra Subprograms

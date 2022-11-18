@@ -1,5 +1,5 @@
-libdir=/home/docker/libs/lapack64-a/lib64
-includedir=/home/docker/libs/lapack64-a/include
+libdir=/home/docker/libs/lapack64-static-3.10.1/lib64
+includedir=/home/docker/libs/lapack64-static-3.10.1/include
 
 Name: LAPACK
 Description: FORTRAN reference implementation of LAPACK Linear Algebra PACKage

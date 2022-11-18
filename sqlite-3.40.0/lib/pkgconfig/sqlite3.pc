@@ -1,6 +1,6 @@
 # Package Information for pkg-config
 
-prefix=/home/docker/libs//sqlite-3.40.0
+prefix=/home/docker/libs/sqlite-3.40.0
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

@@ -1,4 +1,4 @@
-prefix=/home/docker/libs/gmp
+prefix=/home/docker/libs/gmp-6.1.2
 exec_prefix=${prefix}
 includedir=${prefix}/include
 libdir=${exec_prefix}/lib
