@@ -1,4 +1,4 @@
 
 mkl-2021a/lib/libmkl_core.so.1
-flint-2.9.0/lib/libflint.a
+flint2-2.9.0/lib/libflint.a
 mkl-2021a/lib/libmkl_core.a
