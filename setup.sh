@@ -9,14 +9,14 @@ if [[ ! -f "$FILE" ]]; then
 fi
 done
 
-source ../SLISC0/make/lib_append.sh arb-*
-source ../SLISC0/make/lib_append.sh arpack-ng-*
-source ../SLISC0/make/lib_append.sh flint2-*
-source ../SLISC0/make/lib_append.sh gmp-*
-source ../SLISC0/make/lib_append.sh gsl-*
-source ../SLISC0/make/lib_append.sh lapack64-shared-*
-source ../SLISC0/make/lib_append.sh lapack64-static-*
-source ../SLISC0/make/lib_append.sh lapack-shared-*
-source ../SLISC0/make/lib_append.sh lapack-static-*
-source ../SLISC0/make/lib_append.sh mkl-*
-source ../SLISC0/make/lib_append.sh mpfr-*
+source ../SLISC0/make/lib_append.sh $PWD/arb-*
+source ../SLISC0/make/lib_append.sh $PWD/arpack-ng-*
+source ../SLISC0/make/lib_append.sh $PWD/flint2-*
+source ../SLISC0/make/lib_append.sh $PWD/gmp-*
+source ../SLISC0/make/lib_append.sh $PWD/gsl-*
+source ../SLISC0/make/lib_append.sh $PWD/lapack64-shared-*
+source ../SLISC0/make/lib_append.sh $PWD/lapack64-static-*
+source ../SLISC0/make/lib_append.sh $PWD/lapack-shared-*
+source ../SLISC0/make/lib_append.sh $PWD/lapack-static-*
+source ../SLISC0/make/lib_append.sh $PWD/mkl-*
+source ../SLISC0/make/lib_append.sh $PWD/mpfr-*
