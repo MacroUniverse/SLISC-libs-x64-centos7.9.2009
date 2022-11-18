@@ -357,7 +357,8 @@ typedef enum {
    MSC as above. */
 
 #if defined(__GNUC__) && \
-  (__GNUC__ >= 5 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 9))
+  (__GNUC__ >= 5 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 9)) && \
+  !defined(__INTEL_COMPILER)
 # define MPFR_RETURNS_NONNULL __attribute__ ((__returns_nonnull__))
 #else
 # define MPFR_RETURNS_NONNULL
