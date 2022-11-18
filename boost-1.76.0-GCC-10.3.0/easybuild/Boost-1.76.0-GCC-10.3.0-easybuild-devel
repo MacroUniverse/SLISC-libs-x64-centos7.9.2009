@@ -1,0 +1,115 @@
+
+if mode() == "unload" or not ( isloaded("GCCcore-10.3.0-easybuild-devel") ) then
+    load("GCCcore-10.3.0-easybuild-devel")
+end
+
+if mode() == "unload" or not ( isloaded("ICU-69.1-GCCcore-10.3.0-easybuild-devel") ) then
+    load("ICU-69.1-GCCcore-10.3.0-easybuild-devel")
+end
+
+if mode() == "unload" or not ( isloaded("zlib-1.2.11-GCCcore-10.3.0-easybuild-devel") ) then
+    load("zlib-1.2.11-GCCcore-10.3.0-easybuild-devel")
+end
+
+if mode() == "unload" or not ( isloaded("binutils-2.36.1-GCCcore-10.3.0-easybuild-devel") ) then
+    load("binutils-2.36.1-GCCcore-10.3.0-easybuild-devel")
+end
+
+if mode() == "unload" or not ( isloaded("XZ-5.2.5-GCCcore-10.3.0-easybuild-devel") ) then
+    load("XZ-5.2.5-GCCcore-10.3.0-easybuild-devel")
+end
+
+if mode() == "unload" or not ( isloaded("EasyBuild-4.6.0-easybuild-devel") ) then
+    load("EasyBuild-4.6.0-easybuild-devel")
+end
+
+if mode() == "unload" or not ( isloaded("GCC-10.3.0-easybuild-devel") ) then
+    load("GCC-10.3.0-easybuild-devel")
+end
+
+if mode() == "unload" or not ( isloaded("bzip2-1.0.8-GCCcore-10.3.0-easybuild-devel") ) then
+    load("bzip2-1.0.8-GCCcore-10.3.0-easybuild-devel")
+end
+setenv("CPPFLAGS", "-I/opt/software/software/ICU/69.1-GCCcore-10.3.0/include -I/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/include")
+setenv("__LMOD_REF_COUNT_MANPATH", "/opt/software/software/ICU/69.1-GCCcore-10.3.0/share/man:1;/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/share/man:1;/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/share/man:1;/opt/software/software/GCCcore/10.3.0/share/man:1;/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/man:1;/opt/software/software/binutils/2.36.1-GCCcore-10.3.0/share/man:1;/usr/share/lmod/lmod/share/man:1")
+setenv("EBVERSIONZLIB", "1.2.11")
+setenv("EBVARCC", "gcc")
+setenv("PKG_CONFIG_PATH", "/opt/software/software/ICU/69.1-GCCcore-10.3.0/lib/pkgconfig:/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/lib/pkgconfig:/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/lib/pkgconfig:/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib/pkgconfig")
+setenv("__LMOD_REF_COUNT_MODULEPATH", "/opt/software/modulefiles/all:1;/opt/beocat/custom_modules:1")
+setenv("__LMOD_REF_COUNT_CMAKE_LIBRARY_PATH", "/opt/software/software/GCCcore/10.3.0/lib64:1")
+setenv("CXXFLAGS", "-O2 -ftree-vectorize -march=native -fno-math-errno -fPIC")
+setenv("LIBS", "-lm -lpthread")
+setenv("EBVAROPTFLAGS", "-O2 -ftree-vectorize -march=native")
+setenv("FC", "gfortran")
+setenv("EBVERSIONBZIP2", "1.0.8")
+setenv("EBVARLDFLAGS", "-L/opt/software/software/ICU/69.1-GCCcore-10.3.0/lib64 -L/opt/software/software/ICU/69.1-GCCcore-10.3.0/lib -L/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/lib64 -L/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/lib -L/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/lib64 -L/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/lib -L/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib64 -L/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib -L/opt/software/software/GCCcore/10.3.0/lib64 -L/opt/software/software/GCCcore/10.3.0/lib")
+setenv("EBVARFFLAGS", "-O2 -ftree-vectorize -march=native -fno-math-errno -fPIC")
+setenv("PATH", "/opt/software/software/EasyBuild/4.6.0/bin:/homes/easybuilder/.yarn/bin:/homes/easybuilder/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/homes/easybuilder/.local/bin:/homes/easybuilder/bin")
+setenv("CMAKE_PREFIX_PATH", "/opt/software/software/EasyBuild/4.6.0")
+setenv("LD_LIBRARY_PATH", "/opt/software/software/ICU/69.1-GCCcore-10.3.0/lib:/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/lib:/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib:/opt/software/software/binutils/2.36.1-GCCcore-10.3.0/lib:/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/lib:/opt/software/software/GCCcore/10.3.0/lib64")
+setenv("__LMOD_REF_COUNT_XDG_DATA_DIRS", "/opt/software/software/ICU/69.1-GCCcore-10.3.0/share:1;/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/share:1;/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/share:1;/opt/software/software/GCCcore/10.3.0/share:1;/opt/software/software/binutils/2.36.1-GCCcore-10.3.0/share:1;/homes/easybuilder/.local/share/flatpak/exports/share:1;/var/lib/flatpak/exports/share:1;/usr/local/share:1;/usr/share:1")
+setenv("EBVARF90FLAGS", "-O2 -ftree-vectorize -march=native -fno-math-errno -fPIC")
+setenv("EBVARPRECFLAGS", "-fno-math-errno")
+setenv("__LMOD_REF_COUNT_LD_LIBRARY_PATH", "/opt/software/software/ICU/69.1-GCCcore-10.3.0/lib:1")
+setenv("__LMOD_REF_COUNT_PATH", "/opt/software/software/EasyBuild/4.6.0/bin:1;/homes/easybuilder/.yarn/bin:1;/homes/easybuilder/.config/yarn/global/node_modules/.bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/homes/easybuilder/.local/bin:1;/homes/easybuilder/bin:1")
+setenv("EBVARF77", "gfortran")
+setenv("LIBRARY_PATH", "/opt/software/software/ICU/69.1-GCCcore-10.3.0/lib:/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/lib:/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/lib:/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib:/opt/software/software/binutils/2.36.1-GCCcore-10.3.0/lib")
+setenv("FLIBS", "-lgfortran")
+setenv("XDG_DATA_DIRS", "/homes/easybuilder/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share")
+setenv("EBVARCXXFLAGS", "-O2 -ftree-vectorize -march=native -fno-math-errno -fPIC")
+setenv("EBVARF90", "gfortran")
+setenv("__LMOD_REF_COUNT_CPATH", "/opt/software/software/ICU/69.1-GCCcore-10.3.0/include:1;/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/include:1;/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/include:1;/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/include:1;/opt/software/software/binutils/2.36.1-GCCcore-10.3.0/include:1")
+setenv("EBVARCXX", "g++")
+setenv("EBROOTICU", "/opt/software/software/ICU/69.1-GCCcore-10.3.0")
+setenv("EBDEVELGCC", "/opt/software/software/GCC/10.3.0/easybuild/GCC-10.3.0-easybuild-devel")
+setenv("F90", "gfortran")
+setenv("_ModuleTable003_", "bmFsIiwKfSwKSUNVID0gewpmbiA9ICIvb3B0L3NvZnR3YXJlL21vZHVsZWZpbGVzL2FsbC9JQ1UvNjkuMS1HQ0Njb3JlLTEwLjMuMC5sdWEiLApmdWxsTmFtZSA9ICJJQ1UvNjkuMS1HQ0Njb3JlLTEwLjMuMCIsCmxvYWRPcmRlciA9IDgsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiSUNVLzY5LjEtR0NDY29yZS0xMC4zLjAiLAp3ViA9ICIwMDAwMDAwNjkuMDAwMDAwMDAxLipnY2Njb3JlLip6ZmluYWwtLjAwMDAwMDAxMC4wMDAwMDAwMDMuKnpmaW5hbCIsCn0sClhaID0gewpmbiA9ICIvb3B0L3NvZnR3YXJlL21vZHVsZWZpbGVzL2FsbC9YWi81LjIuNS1HQ0Njb3JlLTEwLjMuMC5sdWEiLApmdWxsTmFtZSA9ICJY")
+setenv("EBROOTBINUTILS", "/opt/software/software/binutils/2.36.1-GCCcore-10.3.0")
+setenv("F90FLAGS", "-O2 -ftree-vectorize -march=native -fno-math-errno -fPIC")
+setenv("EBVARCPPFLAGS", "-I/opt/software/software/ICU/69.1-GCCcore-10.3.0/include -I/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/include -I/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/include -I/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/include")
+setenv("EBROOTGCC", "/opt/software/software/GCCcore/10.3.0")
+setenv("EBVARFC", "gfortran")
+setenv("MANPATH", "/usr/share/lmod/lmod/share/man:")
+setenv("EBDEVELBINUTILS", "/opt/software/software/binutils/2.36.1-GCCcore-10.3.0/easybuild/binutils-2.36.1-GCCcore-10.3.0-easybuild-devel")
+setenv("EBDEVELGCCCORE", "/opt/software/software/GCCcore/10.3.0/easybuild/GCCcore-10.3.0-easybuild-devel")
+setenv("_ModuleTable007_", "Cn0sCn0sCm1wYXRoQSA9IHsKIi9vcHQvc29mdHdhcmUvbW9kdWxlZmlsZXMvYWxsIiwgIi9vcHQvYmVvY2F0L2N1c3RvbV9tb2R1bGVzIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9vcHQvc29mdHdhcmUvbW9kdWxlZmlsZXMvYWxsOi9vcHQvYmVvY2F0L2N1c3RvbV9tb2R1bGVzIiwKfQo=")
+setenv("_ModuleTable_Sz_", "2")
+setenv("EBVARFLIBS", "-lgfortran")
+setenv("LDFLAGS", "-L/opt/software/software/ICU/69.1-GCCcore-10.3.0/lib64 -L/opt/software/software/ICU/69.1-GCCcore-10.3.0/lib -L/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/lib64 -L/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/lib -L/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/lib64 -L/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/lib -L/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib64 -L/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib -L/opt/software/software/GCCcore/10.3.0/lib64 -L/opt/software/software/GCCcore/10.3.0/lib")
+setenv("CC", "gcc")
+setenv("FFLAGS", "-O2 -ftree-vectorize -march=native -fno-math-errno -fPIC")
+setenv("__LMOD_REF_COUNT_PKG_CONFIG_PATH", "/opt/software/software/ICU/69.1-GCCcore-10.3.0/lib/pkgconfig:1;/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/lib/pkgconfig:1;/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/lib/pkgconfig:1;/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib/pkgconfig:1")
+setenv("__LMOD_REF_COUNT_LIBRARY_PATH", "/opt/software/software/ICU/69.1-GCCcore-10.3.0/lib:1;/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/lib:1;/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/lib:1;/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/lib:1;/opt/software/software/binutils/2.36.1-GCCcore-10.3.0/lib:1")
+setenv("CMAKE_LIBRARY_PATH", "/opt/software/software/GCCcore/10.3.0/lib64")
+setenv("_ModuleTable001_", "X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpFYXN5QnVpbGQgPSB7CmZuID0gIi9vcHQvc29mdHdhcmUvbW9kdWxlZmlsZXMvYWxsL0Vhc3lCdWlsZC80LjYuMC5sdWEiLApmdWxsTmFtZSA9ICJFYXN5QnVpbGQvNC42LjAiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIkVhc3lCdWlsZCIsCndWID0gIjAwMDAwMDAwNC4wMDAwMDAwMDYuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi9vcHQvc29mdHdhcmUvbW9kdWxlZmlsZXMvYWxsIiwg")
+setenv("__LMOD_REF_COUNT_CMAKE_PREFIX_PATH", "/opt/software/software/EasyBuild/4.6.0:1")
+setenv("EBDEVELBZIP2", "/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/easybuild/bzip2-1.0.8-GCCcore-10.3.0-easybuild-devel")
+setenv("EBROOTBZIP2", "/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0")
+setenv("EBROOTZLIB", "/opt/software/software/zlib/1.2.11-GCCcore-10.3.0")
+setenv("_ModuleTable005_", "LApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiYmludXRpbHMvMi4zNi4xLUdDQ2NvcmUtMTAuMy4wIiwKd1YgPSAiMDAwMDAwMDAyLjAwMDAwMDAzNi4wMDAwMDAwMDEuKmdjY2NvcmUuKnpmaW5hbC0uMDAwMDAwMDEwLjAwMDAwMDAwMy4qemZpbmFsIiwKfSwKYnppcDIgPSB7CmZuID0gIi9vcHQvc29mdHdhcmUvbW9kdWxlZmlsZXMvYWxsL2J6aXAyLzEuMC44LUdDQ2NvcmUtMTAuMy4wLmx1YSIsCmZ1bGxOYW1lID0gImJ6aXAyLzEuMC44LUdDQ2NvcmUtMTAuMy4wIiwKbG9hZE9yZGVyID0gNCwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJiemlwMi8xLjAuOC1HQ0Njb3JlLTEwLjMuMCIsCndWID0gIjAw")
+setenv("OPTFLAGS", "-O2 -ftree-vectorize -march=native")
+setenv("FCFLAGS", "-O2 -ftree-vectorize -march=native -fno-math-errno -fPIC")
+setenv("PRECFLAGS", "-fno-math-errno")
+setenv("F77", "gfortran")
+setenv("MODULEPATH", "/opt/software/modulefiles/all:/opt/beocat/custom_modules")
+setenv("EBVERSIONICU", "69.1")
+setenv("EBVERSIONXZ", "5.2.5")
+setenv("EBROOTXZ", "/opt/software/software/XZ/5.2.5-GCCcore-10.3.0")
+setenv("EBDEVELXZ", "/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/easybuild/XZ-5.2.5-GCCcore-10.3.0-easybuild-devel")
+setenv("EBVARFCFLAGS", "-O2 -ftree-vectorize -march=native -fno-math-errno -fPIC")
+setenv("EBVARCFLAGS", "-O2 -ftree-vectorize -march=native -fno-math-errno -fPIC")
+setenv("CXX", "g++")
+setenv("EBDEVELICU", "/opt/software/software/ICU/69.1-GCCcore-10.3.0/easybuild/ICU-69.1-GCCcore-10.3.0-easybuild-devel")
+setenv("EBROOTGCCCORE", "/opt/software/software/GCCcore/10.3.0")
+setenv("LOADEDMODULES", "EasyBuild/4.6.0")
+setenv("_ModuleTable004_", "Wi81LjIuNS1HQ0Njb3JlLTEwLjMuMCIsCmxvYWRPcmRlciA9IDcsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiWFovNS4yLjUtR0NDY29yZS0xMC4zLjAiLAp3ViA9ICIwMDAwMDAwMDUuMDAwMDAwMDAyLjAwMDAwMDAwNS4qZ2NjY29yZS4qemZpbmFsLS4wMDAwMDAwMTAuMDAwMDAwMDAzLip6ZmluYWwiLAp9LApiaW51dGlscyA9IHsKZm4gPSAiL29wdC9zb2Z0d2FyZS9tb2R1bGVmaWxlcy9hbGwvYmludXRpbHMvMi4zNi4xLUdDQ2NvcmUtMTAuMy4wLmx1YSIsCmZ1bGxOYW1lID0gImJpbnV0aWxzLzIuMzYuMS1HQ0Njb3JlLTEwLjMuMCIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAx")
+setenv("EBVERSIONGCCCORE", "10.3.0")
+setenv("_ModuleTable002_", "Ii9vcHQvYmVvY2F0L2N1c3RvbV9tb2R1bGVzIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi9vcHQvc29mdHdhcmUvbW9kdWxlZmlsZXMvYWxsOi9vcHQvYmVvY2F0L2N1c3RvbV9tb2R1bGVzIiwKfQo=")
+setenv("EBVARLIBS", "-lm -lpthread")
+setenv("CPATH", "/opt/software/software/ICU/69.1-GCCcore-10.3.0/include:/opt/software/software/XZ/5.2.5-GCCcore-10.3.0/include:/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/include:/opt/software/software/bzip2/1.0.8-GCCcore-10.3.0/include:/opt/software/software/binutils/2.36.1-GCCcore-10.3.0/include")
+setenv("EBVERSIONGCC", "10.3.0")
+setenv("CFLAGS", "-O2 -ftree-vectorize -march=native -fno-math-errno -fPIC")
+setenv("EBDEVELZLIB", "/opt/software/software/zlib/1.2.11-GCCcore-10.3.0/easybuild/zlib-1.2.11-GCCcore-10.3.0-easybuild-devel")
+setenv("EBVERSIONBINUTILS", "2.36.1")
+setenv("_LMFILES_", "/opt/software/modulefiles/all/EasyBuild/4.6.0.lua")
+setenv("_ModuleTable006_", "MDAwMDAwMS4wMDAwMDAwMDAuMDAwMDAwMDA4LipnY2Njb3JlLip6ZmluYWwtLjAwMDAwMDAxMC4wMDAwMDAwMDMuKnpmaW5hbCIsCn0sCnpsaWIgPSB7CmZuID0gIi9vcHQvc29mdHdhcmUvbW9kdWxlZmlsZXMvYWxsL3psaWIvMS4yLjExLUdDQ2NvcmUtMTAuMy4wLmx1YSIsCmZ1bGxOYW1lID0gInpsaWIvMS4yLjExLUdDQ2NvcmUtMTAuMy4wIiwKbG9hZE9yZGVyID0gNiwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJ6bGliLzEuMi4xMS1HQ0Njb3JlLTEwLjMuMCIsCndWID0gIjAwMDAwMDAwMS4wMDAwMDAwMDIuMDAwMDAwMDExLipnY2Njb3JlLip6ZmluYWwtLjAwMDAwMDAxMC4wMDAwMDAwMDMuKnpmaW5hbCIs")
