@@ -356,9 +356,8 @@ typedef enum {
    not __llvm__, and __declspec(deprecated("...")) can be used with
    MSC as above. */
 
-#if defined(__GNUC__) && \
-  (__GNUC__ >= 5 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 9)) && \
-  !defined(__INTEL_COMPILER)
+#if defined(__GNUC__) && !defined (__INTEL_COMPILER) && \
+  (__GNUC__ >= 5 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 9))
 # define MPFR_RETURNS_NONNULL __attribute__ ((__returns_nonnull__))
 #else
 # define MPFR_RETURNS_NONNULL
